@@ -33,3 +33,281 @@ html[data-theme="dark"] #page-header #post-info {
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.2);
 }
+
+/* 主副标题 */
+html:not([data-theme="dark"]) #site-title,
+html:not([data-theme="dark"]) .site-title,
+html:not([data-theme="dark"]) #site-name,
+html:not([data-theme="dark"]) #site-info .site-subtitle,
+html:not([data-theme="dark"]) #subtitle,
+html:not([data-theme="dark"]) #nav #blog-info .site-name,
+html:not([data-theme="dark"]) #nav #blog-info a {
+    color: #2c3e50 !important;
+    text-shadow: none !important;
+}
+/* 导航栏菜单、图标 */
+html:not([data-theme="dark"]) #nav .site-page,
+html:not([data-theme="dark"]) #nav .menus_items .menus_item > a > span,
+html:not([data-theme="dark"]) #nav .menus_items .menus_item > a > i,
+html:not([data-theme="dark"]) #search-button > a,
+html:not([data-theme="dark"]) #search-button > a > span,
+html:not([data-theme="dark"]) #search-button > a > i {
+    color: #2c3e50 !important;
+    text-shadow: none !important;
+}
+html:not([data-theme="dark"]) #nav .menus_item:hover > a,
+html:not([data-theme="dark"]) #nav .menus_item:hover > a > span,
+html:not([data-theme="dark"]) #nav .menus_item:hover > a > i {
+    color: #49b1f5 !important;
+}
+/* 底部与 Meta 数据 */
+html:not([data-theme="dark"]) #page-header .page-title,
+html:not([data-theme="dark"]) #footer,
+html:not([data-theme="dark"]) #footer a,
+html:not([data-theme="dark"]) #footer div,
+html:not([data-theme="dark"]) #footer p,
+html:not([data-theme="dark"]) #footer span,
+html:not([data-theme="dark"]) #footer .copyright *,
+html:not([data-theme="dark"]) #post-info .post-title,
+html:not([data-theme="dark"]) #post-info #post-meta,
+html:not([data-theme="dark"]) #post-info #post-meta a,
+html:not([data-theme="dark"]) #post-info #post-meta .post-meta-separator,
+html:not([data-theme="dark"]) #post-info #post-meta i {
+    color: #2c3e50 !important;
+    text-shadow: none !important;
+}
+
+html:not([data-theme="dark"]) #nav .menus_items .menus_item .menus_item_child li:hover,
+html:not([data-theme="dark"]) #nav .menus_items .menus_item .menus_item_child li.active {
+    background: transparent !important; 
+}
+html:not([data-theme="dark"]) #nav .menus_items .menus_item .menus_item_child li:hover a,
+html:not([data-theme="dark"]) #nav .menus_items .menus_item .menus_item_child li:hover a span,
+html:not([data-theme="dark"]) #nav .menus_items .menus_item .menus_item_child li.active a,
+html:not([data-theme="dark"]) #post-info #post-meta a:hover {
+    color: #49b1f5 !important;
+}
+
+#footer, #page-header.post-bg, #page-header.page-bg {
+    background: transparent !important;
+}
+#page-header.post-bg::before, #page-header.page-bg::before {
+    background-color: transparent !important;
+}
+
+#body-wrap #recent-posts > .recent-post-item .recent-post-info,
+#body-wrap #recent-posts > .recent-post-item .recent-post-info::before,
+#body-wrap #recent-posts > .recent-post-item .recent-post-info::after,
+#body-wrap #recent-posts > .recent-post-item .recent-post-info > .article-title,
+#body-wrap #recent-posts > .recent-post-item .recent-post-info > .article-meta-wrap,
+#body-wrap #recent-posts > .recent-post-item .recent-post-info > .content {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important; 
+}
+
+/* 文章顶部卡片 */
+#page-header #post-info {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    display: block;
+    text-align: left;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+    #page-header #post-info {
+        padding: 15px 20px !important;
+        bottom: 20px !important;
+    }
+
+    #post-info #post-meta > .meta-firstline > span:not(.post-meta-wordcount),
+    #post-info #post-meta > .meta-secondline > span:not(.post-meta-wordcount) {
+        display: none !important;
+    }
+
+    #post-info #post-meta > .meta-firstline > .post-meta-separator,
+    #post-info #post-meta > .meta-secondline > .post-meta-separator {
+        display: none !important;
+    }
+
+    #post-info .post-title {
+        text-align: justify !important;
+        text-align-last: left !important;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+#article-container .mermaid,
+#article-container .mermaid svg,
+.mermaid-wrap,
+#article-container .mermaid svg rect.mermaid-bg,
+#article-container .mermaid svg rect:first-child {
+    background: transparent !important;
+    fill: transparent !important;
+}
+
+/* 全局颜色变量 */
+html:not([data-theme="dark"]) {
+    --hl-bg: #f4f7fa !important;
+    --hltools-bg: #e9eef4 !important;
+    --hlnumber-bg: #f4f7fa !important;
+    --hlnumber-color: #8da4bb !important;
+    --hlscrollbar-bg: #dbe6f0 !important;
+    --hlexpand-bg: linear-gradient(180deg, rgba(244,247,250,0), rgba(244,247,250,0.9)) !important;
+}
+/* 代码块背景色 */
+html:not([data-theme="dark"]) #article-container .highlight table {
+    background-color: #f4f7fa !important;
+}
+/* 关键字着色 */
+html:not([data-theme="dark"]) .highlight .code .keyword,
+html:not([data-theme="dark"]) .highlight .code .built_in,
+html:not([data-theme="dark"]) .highlight .code .type {
+    color: #005cc5 !important;
+}
+/* 字符串着色 */
+html:not([data-theme="dark"]) .highlight .code .string {
+    color: #22863a !important;
+}
+/* 注释着色 */
+html:not([data-theme="dark"]) .highlight .code .comment {
+    color: #677886 !important;
+    font-style: italic !important;
+}
+/* 数字常量着色 */
+html:not([data-theme="dark"]) .highlight .code .number {
+    color: #d130a5 !important;
+}
+/* 函数名与类标题着色 */
+html:not([data-theme="dark"]) .highlight .code .title,
+html:not([data-theme="dark"]) .highlight .code .function {
+    color: #0077aa !important;
+}
+/* 预处理指令与宏定义着色 */
+html:not([data-theme="dark"]) .highlight .code .meta,
+html:not([data-theme="dark"]) .highlight .code .meta-keyword {
+    color: #8b3c9b !important;
+}
+/* 局部变量与普通属性 */
+html:not([data-theme="dark"]) .highlight .code .attr,
+html:not([data-theme="dark"]) .highlight .code .variable,
+html:not([data-theme="dark"]) .highlight .code .params {
+    color: #212f3b !important;
+}
+
+/* 全局颜色变量 */
+html:not([data-theme="dark"]) {
+    --hl-bg: #f4f7fa !important;
+    --hltools-bg: #e9eef4 !important;
+    --hlnumber-bg: #f4f7fa !important;
+    --hlnumber-color: #8da4bb !important;
+    --hlscrollbar-bg: #dbe6f0 !important;
+    --hlexpand-bg: linear-gradient(180deg, rgba(244,247,250,0), rgba(244,247,250,0.9)) !important;
+}
+/* 代码块背景色 */
+html:not([data-theme="dark"]) #article-container .highlight table {
+    background-color: #f4f7fa !important;
+}
+/* 关键字着色 */
+html:not([data-theme="dark"]) .highlight .code .keyword,
+html:not([data-theme="dark"]) .highlight .code .built_in,
+html:not([data-theme="dark"]) .highlight .code .type {
+    color: #005cc5 !important;
+}
+/* 字符串着色 */
+html:not([data-theme="dark"]) .highlight .code .string {
+    color: #22863a !important;
+}
+/* 注释着色 */
+html:not([data-theme="dark"]) .highlight .code .comment {
+    color: #677886 !important;
+    font-style: italic !important;
+}
+/* 数字常量着色 */
+html:not([data-theme="dark"]) .highlight .code .number {
+    color: #d130a5 !important;
+}
+/* 函数名与类标题着色 */
+html:not([data-theme="dark"]) .highlight .code .title,
+html:not([data-theme="dark"]) .highlight .code .function {
+    color: #0077aa !important;
+}
+/* 预处理指令与宏定义着色 */
+html:not([data-theme="dark"]) .highlight .code .meta,
+html:not([data-theme="dark"]) .highlight .code .meta-keyword {
+    color: #8b3c9b !important;
+}
+/* 局部变量与普通属性 */
+html:not([data-theme="dark"]) .highlight .code .attr,
+html:not([data-theme="dark"]) .highlight .code .variable,
+html:not([data-theme="dark"]) .highlight .code .params {
+    color: #212f3b !important;
+}
+
+/* 表头居中 */
+#article-container table th,
+#article-container table thead th {
+    text-align: center !important;
+}
+
+/* ================== 明亮模式 ================== */
+/* 表格半透明 */
+html:not([data-theme="dark"]) #article-container table {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+/* 边框线条颜色 */
+html:not([data-theme="dark"]) #article-container table,
+html:not([data-theme="dark"]) #article-container table th,
+html:not([data-theme="dark"]) #article-container table td {
+    border-color: #919191da !important;
+    border-width: 1px !important;
+}
+/* 偶数行颜色 */
+html:not([data-theme="dark"]) #article-container table tbody tr:nth-child(even) {
+    background-color: rgba(240, 244, 248, 0.5) !important;
+}
+
+/* ================== 夜间模式 ================== */
+/* 表格半透明 */
+html[data-theme="dark"] #article-container table {
+    background-color: rgba(22, 27, 34, 0.5) !important; 
+}
+/* 边框线条颜色 */
+html[data-theme="dark"] #article-container table,
+html[data-theme="dark"] #article-container table th,
+html[data-theme="dark"] #article-container table td {
+    border-color: #5c6c7f !important;
+    border-width: 1px !important;
+}
+/* 偶数行颜色 */
+html[data-theme="dark"] #article-container table tbody tr:nth-child(even) {
+    background-color: rgba(30, 36, 44, 0.5) !important;
+}
+
+
+/* 无顶图页面正文标题居中 */
+#body-wrap #page .page-title {
+    text-align: center !important;
+}
+
+/* 文章排版改为两端对齐 */
+#article-container {
+    text-align: justify;
+}
+
+/* 视频自适应页面尺寸 */
+iframe[src*="youtube.com"],
+iframe[src*="youtu.be"],
+iframe[src*="vimeo.com"] {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
